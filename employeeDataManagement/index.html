@@ -15,61 +15,62 @@
 </head>
 
 <body>
-    
     <div class="jumbotron">
-  <div class="container">
-    <h1>Employee Data Management</h1>
-    	<p>A comprehensive Directory of Employee Billable Hours</p>
-  </div>
-
-<table>
-
-<div class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading">Current Employees</div>
-
-  <!-- Table -->
-  <table class="table">
-    ...
-  </table>
-</div>
-
-
-<form class="form-horizontal">
-  <div class="form-group">
-    <label for="inputName" class="col-sm-2 control-label">Employee Name</label>
-    <div class="col-sm-10">
-      <input type="name" class="form-control" id="inputName" placeholder="">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputRole" class="col-sm-2 control-label">Role</label>
-    <div class="col-sm-10">
-      <input type="Role" class="form-control" id="inputRole" placeholder="">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputStartDate" class="col-sm-2 control-label">Start Date (DD/MM/YY - ex: 01/01/89)</label>
-    <div class="col-sm-10">
-      <input type="StartDate" class="form-control" id="inputStartDate" placeholder="">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputRate" class="col-sm-2 control-label">Monthly Rate</label>
-    <div class="col-sm-10">
-      <input type="monthlyRate" class="form-control" id="inputRate" placeholder="">
-    </div>
-  </div>
-  
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">Submit</button>
-    </div>
-  </div>
-</form>
-
-  <!-- Script -->
-  <script src="logic.js"></script>
+        <div class="container">
+            <h1>Employee Data Management</h1>
+            <p>A Comprehensive Directory of Employee Billable Hours</p>
+        </div>
+        <table>
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Current Employees</div>
+                <!-- Table -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Employee Name</th>
+                            <th>Role</th>
+                            <th>Start Date</th>
+                            <th>Months Worked</th>
+                            <th>Monthly Rate ($)</th>
+                            <th>Total Billed</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputName" class="col-sm-2 control-label">Employee Name</label>
+                    <div class="col-sm-10">
+                        <input type="name" class="form-control" id="inputName" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputRole" class="col-sm-2 control-label">Role</label>
+                    <div class="col-sm-10">
+                        <input type="Role" class="form-control" id="inputRole" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputStartDate" class="col-sm-2 control-label">Start Date (DD/MM/YY - ex: 01/01/89)</label>
+                    <div class="col-sm-10">
+                        <input type="StartDate" class="form-control" id="inputStartDate" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputRate" class="col-sm-2 control-label">Monthly Rate</label>
+                    <div class="col-sm-10">
+                        <input type="monthlyRate" class="form-control" id="inputRate" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <!-- Script -->
+            <script src="logic.js"></script>
 </body>
 
 </html>
