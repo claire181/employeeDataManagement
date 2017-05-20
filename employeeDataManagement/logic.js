@@ -20,7 +20,12 @@ database.ref().on("child_added", function(childSnapshot) {
   event.preventDefault();
   // // Get the input values
   var employeeName = $("#employeeName").val().trim();
-  var employeeRole = parseInt($("#inputRole").val().trim());
+  var employeeRole = $("#inputRole").val().trim();
+  var employeeStart = $("#inputStartDate").val().trim();
+  var rate = $("inputRate").val().trim();
+
+  var months = 0;
+  var billed = 0;
 
 
     // Change the HTML to reflect the local value in firebase.
@@ -31,10 +36,38 @@ database.ref().on("child_added", function(childSnapshot) {
   console.log(employeeName);
   console.log(employeeRole);
 
+
+function months() {
+return;
+        
+      },
+
+function billed(){
+
+return;
+
+      };
+
+
  
-    database.ref().set({
+    database.ref().push({
       name: employeeName,
-      role: employeeRole
+
+      role: employeeRole,
+
+      start: employeeStart,
+
+      rate: rate,
+
+      months: 
+
+      billed: 
+
+
+
+      }
+
+
     });
 
     // Store the new name and role as a local variable (could have also used the Firebase variable)
@@ -42,12 +75,14 @@ database.ref().on("child_added", function(childSnapshot) {
     // highPrice = parseInt(bidderPrice);
 
 
-    // Change the HTML to reflect the new hemployee info
-    $("##inputName").html(employeeName);
-    $("#inputRole").html(employeeRole);
-  }
+    // Change the HTML to reflect the new employee info
+    var newRow = &("<tr>")
+    newRow.addClass('latestInfo');
+    newRow.html(name role)
+
+  
 
  
   
 
-});
+
