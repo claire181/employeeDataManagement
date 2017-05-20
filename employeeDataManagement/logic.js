@@ -34,7 +34,7 @@ database.ref().on("child_added", function(childSnapshot) {
  
     database.ref().set({
       name: employeeName,
-      highPrice: employeeRole
+      role: employeeRole
     });
 
     // Store the new name and role as a local variable (could have also used the Firebase variable)
@@ -43,14 +43,11 @@ database.ref().on("child_added", function(childSnapshot) {
 
 
     // Change the HTML to reflect the new hemployee info
-    $("#highest-bidder").html(bidderName);
-    $("#highest-price").html("$" + bidderPrice);
+    $("##inputName").html(employeeName);
+    $("#inputRole").html(employeeRole);
   }
 
-  else {
-
-    // Alert
-    alert("Sorry that bid is too low. Try again.");
-  }
+ 
+  
 
 });
